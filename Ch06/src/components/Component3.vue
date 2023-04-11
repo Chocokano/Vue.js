@@ -4,9 +4,11 @@
   <button @click="btnInit">초기화</button>
 </template>
 <script setup>
+import { ref } from "vuex";
 import { useStore } from "vuex";
 
 const store = useStore();
+const count = ref(0);
 
 const btnInit = function () {
   // store action 호출
