@@ -69,7 +69,7 @@ const btnWrite = () => {
   article.uid = user.uid;
 
   axios
-    .post("http://43.201.1.209:8484/write", article)
+    .post("/write", article)
     .then((response) => {
       console.log(response);
       if (response.data > 0) {

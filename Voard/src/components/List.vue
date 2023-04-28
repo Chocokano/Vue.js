@@ -68,11 +68,11 @@ const page = ref(1);
 
 const btnLogout = () => {
   localStorage.removeItem("accessToken");
-  router.push("/user/login");
+  router.push("/api/user/login");
 };
 
 const btnWrite = () => {
-  router.push("/write");
+  router.push("/api/write");
 };
 
 const pageHandler = () => {
@@ -81,7 +81,7 @@ const pageHandler = () => {
 
 const getArticles = (pg) => {
   axios
-    .get("http://43.201.1.209:8484/list?pg=" + pg)
+    .get("/list?pg=" + pg)
     .then((response) => {
       console.log(response);
       const data = response.data;

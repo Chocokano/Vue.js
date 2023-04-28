@@ -60,7 +60,7 @@ const btnCancel = () => {
 
 const btnNext = () => {
   if (state.isCheck1 && state.isCheck2) {
-    router.push("/user/register");
+    router.push("/api/user/register");
   } else {
     alert("동의체크 하셔야 합니다.");
   }
@@ -68,7 +68,7 @@ const btnNext = () => {
 
 onBeforeMount(() => {
   axios
-    .get("http://43.201.1.209:8484/user/terms")
+    .get("/api/user/terms")
     .then((response) => {
       console.log(response);
       state.data = response.data;

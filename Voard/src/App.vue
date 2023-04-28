@@ -16,7 +16,7 @@ onBeforeMount(() => {
 
   if (accessToken != null) {
     axios
-      .get("http://43.201.1.209:8484/user/auth", {
+      .get("/api/user/auth", {
         headers: { "X-AUTH-TOKEN": accessToken },
       })
       .then((response) => {

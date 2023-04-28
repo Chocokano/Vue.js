@@ -63,7 +63,7 @@ const user = reactive({
 
 const btnLogin = () => {
   axios
-    .post("http://43.201.1.209:8484/user/login", user)
+    .post("/api/user/login", user)
     .then((response) => {
       console.log(response);
 
