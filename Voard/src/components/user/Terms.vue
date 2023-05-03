@@ -60,7 +60,7 @@ const btnCancel = () => {
 
 const btnNext = () => {
   if (state.isCheck1 && state.isCheck2) {
-    router.push("/api/user/register");
+    router.push("/user/register");
   } else {
     alert("동의체크 하셔야 합니다.");
   }

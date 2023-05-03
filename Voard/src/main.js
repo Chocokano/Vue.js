@@ -27,4 +27,4 @@ app.mount("#app");
 // axios 전역설정
 
 //axios.defaults.baseURL = "http://localhost:8484"; // 개발용
-axios.defaults.baseURL = "http://43.201.1.209:8484;"; // 배포용
+axios.defaults.baseURL = "http://43.201.1.209:8484"; // 배포용

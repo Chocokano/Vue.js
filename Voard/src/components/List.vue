@@ -68,7 +68,7 @@ const page = ref(1);
 
 const btnLogout = () => {
   localStorage.removeItem("accessToken");
-  router.push("/api/user/login");
+  router.push("/user/login");
 };
 
 const btnWrite = () => {
