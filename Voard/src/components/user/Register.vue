@@ -227,7 +227,7 @@ const btnCheckUid = () => {
 };
 
 const btnCancel = () => {
-  router.push("/api/user/login");
+  router.push("/user/login");
 };
 
 const btnRegister = () => {
